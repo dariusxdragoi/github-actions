@@ -3,9 +3,10 @@ name: Shell commands
 on: [push]
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: echo a string
-      run: echo "Hello World"
-    - name: run a command
-      run: nmp -v
+  run-sell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello World"
+      - name: run a command
+        run: nmp -v
