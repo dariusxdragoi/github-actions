@@ -9,4 +9,4 @@ jobs:
       - name: echo a string
         run: echo "Hello World"
       - name: run a command
-        run: nmp -v
+        run: pwd
