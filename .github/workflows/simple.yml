@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "Hello World"
+        run: echho "Hello World"
       - name: run a command
         run: pwd
       - name: run py command
@@ -17,6 +17,7 @@ jobs:
         shell: python
   run-windows-command:
     runs-on: windows-latest
+    needs: ["run-sell-command"]
     steps:
       - name: Directory PowerShell
         run: Get-Location
