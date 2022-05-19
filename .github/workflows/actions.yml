@@ -9,4 +9,6 @@ jobs:
       - name: Simple JS Actions
         run: |
           pwd
-          ls 
+          ls
+      - name: Checkout
+        uses: actions/checkout@v1
