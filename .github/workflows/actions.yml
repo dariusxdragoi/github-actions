@@ -1,6 +1,6 @@
 name: Actions Workflow
 
-on: [push]
+on: [push, pull_req]
 
 jobs:
   run-github-actions:
@@ -15,4 +15,4 @@ jobs:
       - name: Simple JS Actions
         run: |
           pwd
-          ls -a
+          node -v
