@@ -3,6 +3,10 @@ name: Shell commands
 on: [push]
 
 jobs:
+  node-version:
+    steps:
+      - name: Log node version
+        run: node -v
   run-sell-command:
     runs-on: ubuntu-latest
     steps:
